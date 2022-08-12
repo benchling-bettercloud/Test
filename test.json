@@ -1,0 +1,274 @@
+{
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Hello, please fill out the information needed to create an incident ticket in FireHydrant"
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Incident Name",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Customer Impact Summary",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "multi_static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select options",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "all",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "internal",
+							"emoji": true
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "none",
+							"emoji": true
+						},
+						"value": "value-2"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "some",
+							"emoji": true
+						},
+						"value": "value-2"
+					}
+				],
+				"action_id": "multi_static_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Functionalities (Optional)",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "multi_static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select options",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Dev or test tenants",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Production",
+							"emoji": true
+						},
+						"value": "value-1"
+					}
+				],
+				"action_id": "multi_static_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Environment (Optional)",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "multi_static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select options",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Apps Team Holiday Incident Response",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Infra Team Major Incident Response",
+							"emoji": true
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Security Incident Management",
+							"emoji": true
+						},
+						"value": "value-2"
+					}
+				],
+				"action_id": "multi_static_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Services (Optional)",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "multi_static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select options",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "SEV1",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "SEV2",
+							"emoji": true
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "SEV3",
+							"emoji": true
+						},
+						"value": "value-2"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "SEV4",
+							"emoji": true
+						},
+						"value": "value-3"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "SEVSLO",
+							"emoji": true
+						},
+						"value": "value-4"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "GAMEDAY",
+							"emoji": true
+						},
+						"value": "value-5"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "MAINTENANCE",
+							"emoji": true
+						},
+						"value": "value-6"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "UNSET",
+							"emoji": true
+						},
+						"value": "value-7"
+					}
+				],
+				"action_id": "multi_static_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Severity (Optional)",
+				"emoji": true
+			}
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Submit",
+						"emoji": true
+					},
+					"style": "primary",
+					"value": "click_me_123",
+					"action_id": "actionId-0"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Cancel",
+						"emoji": true
+					},
+					"style": "danger",
+					"value": "click_me_123",
+					"action_id": "actionId-1"
+				}
+			]
+		}
+	]
+}
